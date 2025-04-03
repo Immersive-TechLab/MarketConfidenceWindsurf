@@ -9,9 +9,11 @@ This application allows users to analyze the impact of global events on the MSCI
 ## Features
 
 - Interactive chart showing MSCI World Index data
-- Event analysis powered by LLM (OpenAI)
+- Event analysis using simulated data
 - Detailed impact analysis with recovery time metrics
 - Modern, responsive UI
+- Investment portfolio management with strategy recommendations
+- PDF export of investment strategy analysis
 
 ## Project Structure
 
@@ -24,7 +26,6 @@ This application allows users to analyze the impact of global events on the MSCI
 
 - Node.js (v14 or later)
 - Python (v3.8 or later)
-- OpenAI API key
 
 ### Backend Setup
 
@@ -44,10 +45,7 @@ This application allows users to analyze the impact of global events on the MSCI
    pip install -r requirements.txt
    ```
 
-4. Set up your OpenAI API key:
-   - Edit the `.env` file and replace `your_openai_api_key_here` with your actual OpenAI API key
-
-5. Start the backend server:
+4. Start the backend server:
    ```
    python app.py
    ```
@@ -75,13 +73,15 @@ This application allows users to analyze the impact of global events on the MSCI
 2. The default view shows the MSCI World Index for the past 5 years
 3. Enter a global event in the input field (e.g., "COVID-19 pandemic", "2008 financial crisis")
 4. View the analysis and the market chart adjusted to the relevant time period
-5. Use the "Reset to Default View" button to return to the 5-year view
+5. Create and manage investment portfolios with the Investment Manager
+6. Export investment strategy analysis as PDF reports
+7. Use the "Reset to Default View" button to return to the 5-year view
 
 ## Note
 
-For full functionality, an OpenAI API key is required. Without an API key, the application will provide limited functionality.
+This version of the application uses simulated data for market analysis and investment recommendations.
 
 ## Technologies Used
 
-- **Backend**: Python, Flask, Pandas, yfinance, OpenAI
+- **Backend**: Python, Flask
 - **Frontend**: React, Recharts, Axios
